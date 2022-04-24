@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.AddBtn = new System.Windows.Forms.Button();
-            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.AddBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -55,22 +55,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(810, 365);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Location = new System.Drawing.Point(12, 406);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(90, 30);
-            this.AddBtn.TabIndex = 2;
-            this.AddBtn.Text = "Создать заказ";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // orderBindingSource
-            // 
-            this.orderBindingSource.DataSource = typeof(WorldSkills.Models.Order);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -101,6 +88,20 @@
             this.productsDataGridViewTextBoxColumn.ReadOnly = true;
             this.productsDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.productsDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.DataSource = typeof(WorldSkills.Models.Order);
+            // 
+            // AddBtn
+            // 
+            this.AddBtn.Location = new System.Drawing.Point(12, 406);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(90, 30);
+            this.AddBtn.TabIndex = 2;
+            this.AddBtn.Text = "Создать заказ";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // OrdersForm
             // 

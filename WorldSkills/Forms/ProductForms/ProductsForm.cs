@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Windows.Forms;
 using WorldSkills.CategoryForms;
 using WorldSkills.Data;
+using WorldSkills.Forms.OrderForms;
 using WorldSkills.Models;
 using WorldSkills.ProductForms;
 
@@ -111,6 +112,12 @@ namespace WorldSkills
         {
             CategorysForm catForm = new CategorysForm();
             catForm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OrdersForm orForm = new OrdersForm();
+            orForm.ShowDialog();
         }
     }
 }
