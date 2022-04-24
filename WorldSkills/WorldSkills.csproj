@@ -126,6 +126,10 @@
     <Compile Include="Migrations\202204190951377_AddCountColumn.designer.cs">
       <DependentUpon>202204190951377_AddCountColumn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204241118066_addUserAttributes.cs" />
+    <Compile Include="Migrations\202204241118066_addUserAttributes.designer.cs">
+      <DependentUpon>202204241118066_addUserAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="AutorizationForm.cs">
       <SubType>Form</SubType>
@@ -174,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204190951377_AddCountColumn.resx">
       <DependentUpon>202204190951377_AddCountColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204241118066_addUserAttributes.resx">
+      <DependentUpon>202204241118066_addUserAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
